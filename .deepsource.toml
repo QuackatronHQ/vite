@@ -8,42 +8,7 @@ enabled = true
   import_root = "github.com/QuackatronHQ/vite"
 
 [[analyzers]]
-name = "java"
-enabled = true
-
-  [analyzers.meta]
-  runtime_version = "11"
-
-[[analyzers]]
 name = "javascript"
-enabled = true
-
-  [analyzers.meta]
-  plugins = [
-    "react",
-    "vue"
-  ]
-
-[[analyzers]]
-name = "python"
-enabled = true
-
-  [analyzers.meta]
-  runtime_version = "3.x.x"
-
-[[analyzers]]
-name = "php"
-enabled = true
-
-[[analyzers]]
-name = "rust"
-enabled = true
-
-  [analyzers.meta]
-  msrv = "1.30.0"
-
-[[analyzers]]
-name = "ruby"
 enabled = true
 
 [[analyzers]]
@@ -55,13 +20,13 @@ name = "shell"
 enabled = true
 
 [[analyzers]]
-name = "docker"
-enabled = true
-
-[[analyzers]]
 name = "secrets"
 enabled = true
 
 [[transformers]]
 name = "gofmt"
+enabled = true
+
+[[transformers]]
+name = "prettier"
 enabled = true
